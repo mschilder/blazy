@@ -174,7 +174,7 @@
                 };
                 img.onload = function() {
                     // Is element an image or should we add the src as a background image?
-                    ele.nodeName.toLowerCase() === 'img' ? ele.src = src : ele.style.backgroundImage = 'url("' + src + '")';
+                    ele.nodeName.toLowerCase() === 'img' ? ele.src = src : ele.style.backgroundImage = 'url(' + src + ')';
                     ele.className = ele.className + ' ' + options.successClass;
                     if (options.success) options.success(ele);
                 };
